@@ -14,7 +14,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_toRightOf="@id/btn7"
-        android:layout_toEndof="@id/btn7"
+
         android:text="8" />
 
     <Button
@@ -25,7 +25,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_toRightOf="@id/btn8"
-        android:layout_toEndof="@id/btn8"
+
         android:text="9" />
 
     <Button
@@ -99,14 +99,14 @@
         android:text="0" />
 
     <Button
-        android:id="@+id/btndot"
-        android:layout_width="49dp"
+        android:id="@+id/btnclear"
+        android:layout_width="51dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_alignEnd="@id/btn2"
         android:layout_below="@id/btn2"
+        android:layout_alignEnd="@id/btn2"
+        android:layout_marginStart="5dp"
 
-        android:text="." />
+        android:text="X" />
 
     <Button
         android:id="@+id/btnequal"
@@ -125,7 +125,77 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="13dp"
-        android:layout_marginLeft="13dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginLeft="102dp"
         android:text="7" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn9"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/btn9"
+
+        android:text="+"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnminus"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toRightOf="@id/btn4"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/btnadd"
+
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btnmulti"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toRightOf="@id/btn1"
+        android:layout_below="@id/btnminus"
+
+        android:text="*" />
+
+    <Button
+        android:id="@+id/btndivide"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toRightOf="@id/btnequal"
+        android:layout_below="@id/btnmulti"
+
+        android:text="/" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="284dp"
+        android:layout_height="32dp"
+        android:layout_above="@+id/control"
+
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="67dp"
+
+        android:layout_marginBottom="49dp"
+         />
+
+    <TextView
+        android:id="@+id/control"
+        android:layout_width="284dp"
+        android:layout_height="32dp"
+        android:layout_above="@+id/btn8"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="37dp"
+       />
+
+
 </RelativeLayout>
